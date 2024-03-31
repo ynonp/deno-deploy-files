@@ -1,9 +1,18 @@
 {
   "imports": {
     "ejs": "npm:ejs@^3.1.9",
-    "express": "npm:express@^4.19.2"
+    "express": "npm:express@^4.19.2",
+    "http-errors": "npm:http-errors@^2.0.0"
   },
   "tasks": {
     "dev": "deno run -A --check --watch ./mod.ts"
+  },
+  "deploy": {
+    "project": "c6dd8663-b169-4c33-a59d-cbdeee9e8f1a",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [],
+    "entrypoint": "./mod.ts"
   }
 }
